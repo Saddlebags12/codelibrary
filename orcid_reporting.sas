@@ -7,12 +7,12 @@ options spool source2 mprint mlogic symbolgen;
 /*--------------------------------------------------------------*/
 /* USER SETTINGS                                                */
 /*--------------------------------------------------------------*/
-%let excel_file   = /prj/dcp/restricted/cpfp_eval/progs/orcidtesting/source/Alumni List with Orcids.xlsx;
-%let excel_sheet  = Sheet1;
+%let excel_file   = /prj/dcp/restricted/cpfp_eval/progs/orcidtesting/source/cpfp_merged_orcid.xlsx;
+%let excel_sheet  = cpfp_merged;
 %let sas_file     = /prj/dcp/restricted/cpfp_eval/progs/orcidtesting/source/cpfp_master_fellow_list_20260325.sas7bdat;
 
 /* location where Program 1 saved datasets */
-libname savelib "/prj/dcp/restricted/cpfp_eval/progs/orcidtesting/unzip";
+libname savelib "/prj/dcp/restricted/cpfp_eval/progs/orcidtesting/";
 
 /* saved datasets from Program 1 */
 %let pubs_in   = work.all_orcid_publications;
